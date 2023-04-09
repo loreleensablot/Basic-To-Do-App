@@ -1,6 +1,5 @@
 package com.sablot.basictodo
 
-import android.content.ClipData.Item
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.ItemTouchHelper
@@ -71,9 +70,9 @@ class MainActivity : AppCompatActivity() {
                 todoAdapter.notifyItemRemoved(position)
 
                 Snackbar.make(
-                    binding.root, "An item is removed", Snackbar.LENGTH_LONG
+                    binding.root, getString(R.string.item_removed), Snackbar.LENGTH_LONG
                 )
-                    .setAction("Undo") {
+                    .setAction(getString(R.string.undo)) {
                         // Add the item back to the original data source
                         todoAdapter.todoList.add(position, removedItem)
                         todoAdapter.notifyItemInserted(position)
