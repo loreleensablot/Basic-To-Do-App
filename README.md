@@ -12,3 +12,6 @@ A basic todo app using recyclerview to show for my MD4P Students
 - Recyclerview
 - Swipe to Left Delete - when you swiped left, the item in the Recyclerview removed in the list
 
+## Android Studio used
+
+- Android Studio Giraffe | 2022.3.1 Canary 11
